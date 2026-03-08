@@ -3,14 +3,14 @@
   "errorCount": 0,
   "errorRate": 0,
   "latency": {
-    "p50": 1.39275,
-    "p90": 2.88302,
-    "p95": 3.8962699999999937,
-    "p99": 6.534862
+    "p50": 0.6883,
+    "p90": 1.8864999999999998,
+    "p95": 2.6587699999999983,
+    "p99": 5.466038000000003
   },
   "thresholds": {
-    "http_req_duration": "PASS",
+    "checks": "PASS",
     "check_failure_rate": "PASS",
-    "checks": "PASS"
+    "http_req_duration": "PASS"
   }
 }

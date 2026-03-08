@@ -12,6 +12,11 @@ It demonstrates a two‑phase workflow:
 
 ```
 mock-api/                # Express mock API server
+  ├── tsconfig.json      # TypeScript configuration
+  ├── package.json       # Dependencies and scripts
+  └── src/
+      └── server.ts      # Entry point for Express mock API server
+
 performance-tests/       # k6 scripts and configs
   ├── config.ts          # Scenario configuration
   ├── main.ts            # Entry point for running tests
@@ -23,9 +28,9 @@ performance-tests/       # k6 scripts and configs
 
 ## ⚙️ Requirements
 
-- Node.js (for mock API)
-- k6 (for performance testing)
-- Redis (used for persisting IDs between phases)
+- Node.js (for mock API)  
+- k6 (for performance testing)  
+- Redis (used for persisting IDs between phases)  
 
 ---
 
@@ -67,7 +72,7 @@ k6 run -e AUTH_TOKEN=<token> -e CSV_PATH=./data/objects.csv performance-tests/ma
 
 - Run `main.ts` with k6 as shown above.  
 - Both phases execute in sequence with a single command.  
-- Redis ensures Phase‑2 can consume Phase‑1 data across VUs.
+- Redis ensures Phase‑2 can consume Phase‑1 data across VUs.  
 
 ---
 

@@ -15,9 +15,9 @@ const THINK_TIME = Number(__ENV.THINK_TIME) || 1;
 
 // Load stages for Phase 2 (ramp-up, hold, ramp-down)
 const LOAD_STAGES = [
-  { duration: "1s", target: 2 },  // ramp-up to 10 VUs
-  { duration: "10s", target: 2 },   // hold steady
-  { duration: "1s", target: 0 },   // ramp-down
+  { duration: "10s", target: 10 },  // ramp-up to 10 VUs
+  { duration: "30s", target: 10 },   // hold steady
+  { duration: "10s", target: 0 },   // ramp-down
 ];
 
 // Thresholds

@@ -1,0 +1,16 @@
+{
+  "totalRequests": 1023,
+  "errorCount": 0,
+  "errorRate": 0,
+  "latency": {
+    "p50": 0.5875,
+    "p90": 1.7332200000000002,
+    "p95": 2.605979999999999,
+    "p99": 5.348875999999999
+  },
+  "thresholds": {
+    "http_req_duration": "PASS",
+    "checks": "PASS",
+    "check_failure_rate": "PASS"
+  }
+}

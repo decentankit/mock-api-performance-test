@@ -17,11 +17,11 @@ mock-api/                # Express mock API server
   └── src/
       └── server.ts      # Entry point for Express mock API server
 
-performance-tests/       # k6 scripts and configs
-  ├── config.ts          # Scenario configuration
-  ├── main.ts            # Entry point for running tests
-  ├── seeded_ids.json    # Example seeded data (for illustration)
-  └── summary.json       # Test output (ignored in .gitignore)
+performance-tests/          # k6 scripts and configs
+  ├── config.ts             # Scenario configuration
+  ├── main.ts               # Entry point for running tests
+  ├── summary.json          # Test output - JSON summary report as per Requirement
+  └── summary_default.json  # Test output - Default summary report
 ```
 
 ---

@@ -1,3 +1,4 @@
+import { htmlReport } from "https://raw.githubusercontent.com/benc-uk/k6-reporter/main/dist/bundle.js";
 import http from "k6/http";
 import { check, sleep, group } from "k6";
 import { SharedArray } from "k6/data";
@@ -147,5 +148,6 @@ export function handleSummary(data: any) {
 
   return {
     "summary.json": JSON.stringify(summary, null, 2),
+    "summary.html": htmlReport(data), // generates a full HTML report
   };
 }
